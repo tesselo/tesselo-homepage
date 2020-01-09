@@ -1,0 +1,89 @@
+/* @override 
+	http://tesselo.addb.fr/assets/css/homepage-animation.css */
+
+.animated-wrapper {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .animated-image {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    top: 100%;
+	background-size: cover;
+	background-position: center center;
+  }
+  
+  .animated-nav{
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:space-evenly;
+    -ms-flex-pack:space-evenly;
+   justify-content:space-evenly;
+    z-index:9;
+   padding-right: 18px;
+	padding-left: 18px;
+  }
+
+  .animated-nav .prev,
+  .animated-nav .next,
+  .animated-nav .restart{
+    display: block;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 767px) {
+  
+  .animated-nav{
+    width: 16%;
+    top: 140px;
+	right: 60px;
+  }
+  
+  
+  .animated-nav .prev,
+  .animated-nav .next,
+  .animated-nav .restart{
+  	margin-right: 16px;
+		margin-left: 16px;
+  }
+  }
+  
+ 
+     .animated-nav .prev {
+ background-image: url('../../assets/img/arrow-left-white.svg');
+ background-position:center;
+ background-repeat:no-repeat;
+ background-size:cover;
+
+   
+       
+     }
+     
+    .animated-nav .next {
+background-image: url('../../assets/img/arrow-right-white.svg');
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+
+  
+      
+    }
+    
+    
+    
+    
+
+  .animated-nav .inactive{
+    pointer-events: none;
+    opacity:0.5;
+  }

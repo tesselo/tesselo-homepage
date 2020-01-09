@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "KraftMono-Regular";
+  src: url("../fonts/KraftMono.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/KraftMono.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/KraftMono.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/KraftMono.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/KraftMono.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/KraftMono.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/KraftMono.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');

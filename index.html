@@ -1,0 +1,863 @@
+<!DOCTYPE html>{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tesselo
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href={% static "apple-touch-icon.png" %}>
+    <link rel="icon" type="image/png" sizes="32x32" href={% static "favicon-32x32.png" %}>
+    <link rel="icon" type="image/png" sizes="16x16" href={% static "favicon-16x16.png" %}>
+    <link rel="manifest" href={% static "site.webmanifest" %}>
+    <link rel="mask-icon" href={% static "safari-pinned-tab.svg" %} color="#231f20">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="{% static "assets/css/styles.css" %}">
+    <link rel="stylesheet" href="{% static "assets/css/custom.css" %}?v26">
+    <link rel="stylesheet" href="{% static "assets/css/homepage-animation.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#231f20",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#231f20",
+          "text": "#ffffff"
+        }
+      },
+      "content": {
+        "message": "We use cookies.",
+        "dismiss": "AGREE",
+        "link": "Terms of Service",
+        "href": "/terms"
+      }
+    })});
+    </script>
+    {% if request.get_host == "tesselo.com" %}
+      <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101157326);</script>
+      <script async src="//static.getclicky.com/js"></script>
+    {% endif %}
+  </head>
+  <body id="homepage" class="pre-animation">
+    <div class="menucontainer">
+      <!--start menu-->
+      <div class="container-fluid">
+        <div class="row padmobile">
+          <div class="col-sm-12 col-md-4 menucol">
+            <div class="menu-bg">
+              <div class="vertical-center">
+                <div class="vertical-el">
+                  <div class="overflow">
+                    <a href="solutions-for-sustainability">
+                      <span class="sub">Solutions
+                      </span>
+                    </a>
+                  </div>
+                  <div class="menu-intro">Solutions for Sustainability</div>
+                  <div class="subtitle">Tesselo generates real-time intelligent satellite imagery</div>
+                  <p>
+                    <a href="solutions-for-sustainability#forestry">+ Forestry & Agriculture
+                    </a>
+                    <a href="solutions-for-sustainability#infrastructure">+ Infrastructure & Cities
+                    </a>
+                    <a href="solutions-for-sustainability#insurances">+ Insurance & Certification
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 menucol">
+            <div class="menu-bg2">
+              <div class="vertical-center">
+                <div class="vertical-el">
+                  <div class="overflow">
+                    <a href="spatial-insights-as-a-service">
+                      <span class="sub">Layers
+                      </span>
+                    </a>
+                  </div>
+                  <div class="menu-intro">Spatial Insights as a Service
+                  </div>
+                  <div class="subtitle">We sell AI-Powered spatial insights
+                  </div>
+
+                  <p>
+                    <a href="spatial-insights-as-a-service#composite-imagery">+ Composite imagery
+                    </a>
+                    <a href="spatial-insights-as-a-service#land-cover">+ Land Cover
+                    </a>
+                    <a href="spatial-insights-as-a-service#specialized-layers">+ Specialized layers
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 menucol">
+            <div class="menu-bg3">
+              <div class="vertical-center">
+                <div class="vertical-el">
+                  <div class="overflow">
+                    <a href="about">
+                      <span class="sub">About
+                      </span>
+                    </a>
+                  </div>
+                  <div class="menu-intro">Get to know us</div>
+                  <div class="subtitle">Join our ambitious team
+                  </div>
+                  <p>
+                    <a href="about#what-we-are-about">+ What we Are
+                    </a>
+                    <a href="about#the-builders">+ The Builders
+                    </a>
+                    <a  class="d-none d-md-block"href="about#job-offers">+ Career Opportunity
+                    </a>
+                    <a href="about#contact-section">+ Contact
+                    </a>
+                    <a  class="d-none d-md-block" href="app">+ Sign In
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end menu-->
+    </div>
+    <div>
+      <main id="main" style="background-size: cover;background-repeat: no-repeat;background-position: center;">
+        <div class="bgmenu">
+          <div class="menunav">
+            <div class="logodiv">
+              <a class="navbar-brand" href="/">
+                <img src="{% static "assets/img/nav-logo.svg" %}" width="30" height="30" alt="">
+              </a>
+            </div>
+            <div class="navbar-links-wrapper d-flex align-items-end justify-content-end">
+              <ul class="navbar-links">
+                <li>
+                  <a href="solutions-for-sustainability">+ Solutions
+                  </a>
+                </li>
+                <li>
+                  <a href="spatial-insights-as-a-service">+ Layers
+                  </a>
+                </li>
+                <li>
+                  <a href="about">+ About
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="iconmenu">
+              <img src="{% static "assets/img/nav-plus.svg" %}" />
+            </div>
+          </div>
+        </div>
+        <section id="why">
+          <div class="container-fluid">
+            <div class="row dark-bg">
+              <div class="col col-12 d-none d-md-block homepage-title-wrapper first">
+                <img class="img-fluid homepage-title" src="{% static "assets/img/title-why.svg" %}" data-aos="fade-up" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true"/>
+              </div>
+              <div class="col col-12 d-block d-md-none homepage-title-wrapper first">
+                <img class="img-fluid homepage-title" src="{% static "assets/img/title-why-mobile.svg" %}" data-aos="fade-up" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true"/>
+              </div>
+              <div class="col d-flex justify-content-start align-items-start col-12 second" style="background-image: url({% static 'assets/img/home-road-min.jpg' %});background-repeat: no-repeat;background-size: cover;background-position: center;">
+                <h2 class="why-cta">Make your business smarter and&nbsp;greener using tesselo’s ai driven satellite mapping
+                </h2>
+              </div>
+              <div class="col col-12 col-md-4 dark-bg border border-left-0 border-right-0 linecontainer120">
+                <svg class="svgline" style="width: 100%; height: 100%;">
+                  <line class="linha" x1="0" y1="0" x2="100%" y2="100%" style="stroke:rgb(49,39,199);stroke-width:1">
+                  </line>
+                </svg>
+              </div>
+              <div class="col d-none d-md-block col-12 col-md-8 dark-bg border border-left-0 border-right-0 linecontainer120">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="home">
+          <div class="homebg">
+          </div>
+          <div class="skip">
+            <img src="{% static "assets/img/arrow-right-blue.svg" %}" />
+          </div>
+          <div class="row1">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/P.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/L.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/A.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/N.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/E.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/T.svg' %});">
+            </div>
+            <div class="col8 letra">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/B.svg' %});">
+            </div>
+          </div>
+          <div class="row2">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/I.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/S.svg' %});">
+            </div>
+            <div class="collogo">
+              <img src="{% static "assets/img/logo_tesselo.svg" %}" class="letraimg" />
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/T.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/O.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/O.svg' %});">
+            </div>
+          </div>
+          <div class="row3">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/F.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/A.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/R.svg' %});">
+            </div>
+            <div class="col6 letra">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/A.svg' %});">
+            </div>
+            <div class="col10 letra" style="background-image: url({% static 'assets/img/intro-letras/W.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/A.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras/Y.svg' %});">
+            </div>
+          </div>
+        </section>
+        <section id="homemobile">
+          <div class="homebg">
+          </div>
+          <div class="skip">
+            <img src="{% static "assets/img/arrow-right-blue.svg" %}" />
+          </div>
+          <div class="row1mobile">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/P.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/L.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/A.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/N.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/E.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/T.svg' %});">
+            </div>
+          </div>
+          <div class="row2mobile">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/B.svg' %});">
+            </div>
+          </div>
+          <div class="row3mobile">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/I.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/S.svg' %});">
+            </div>
+            <div class="col8 letra">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/T.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/O.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/O.svg' %});">
+            </div>
+          </div>
+          <div class="row4mobile">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/F.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/A.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/R.svg' %});">
+            </div>
+          </div>
+          <div class="row5mobile">
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/A.svg' %});">
+            </div>
+            <div class="col10 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/W.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/A.svg' %});">
+            </div>
+            <div class="col8 letra" style="background-image: url({% static 'assets/img/intro-letras-mobile/Y.svg' %});">
+            </div>
+          </div>
+          <div class="row6mobile">
+            <div class="collogomobile">
+              <img src="{% static "assets/img/logo_tesselo_mobile.svg" %}" class="letraimg" />
+            </div>
+          </div>
+        </section>
+        <section id="how">
+          <div class="container-fluid multispectral-wrapper">
+            <div id="multiple-images" class="animated-wrapper" data-duration=1000 data-offset=30>
+              <div class="animated-nav">
+                <div class="prev"></div>
+                <div class="next"></div>
+              </div>
+              <div class="animated-image" style="background-image: url({% static 'assets/img/0-how-min.jpg' %});"></div>
+              <div class="animated-image" style="background-image: url({% static 'assets/img/1-how-forest-min.png' %});"></div>
+              <div class="animated-image" style="background-image: url({% static 'assets/img/2-how-agriculture-min.png' %});"></div>
+              <div class="animated-image" style="background-image: url({% static 'assets/img/3-how-desert-min.png' %});"></div>
+              <div class="animated-image" style="background-image: url({% static 'assets/img/4-how-rock-min.png' %});"></div>
+              <div class="animated-image" style="background-image: url({% static 'assets/img/5-how-water-min.png' %});"></div>
+            </div>
+          </div>
+        </section>
+        <section id="sustainability" class="service-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col d-flex justify-content-end align-items-end col-12 dark-bg empty how-title homepage-title-wrapper">
+                <img src="{% static "assets/img/title-how.svg" %}" class="img-fluid homepage-title">
+              </div>
+            </div>
+            <div class="row intro-copy dark-bg">
+              <div class="col d-flex justify-content-start align-items-center col-12 dark-bg">
+                <p class="white">TESSELO augments satellite imagery with artificial intelligence and sectorial expertise to improve your business’ monitoring capability and to solve your environmental challenges.
+                </p>
+              </div>
+              <div class="col d-flex justify-content-start align-items-center col-12 dark-bg">
+                <h2 class="white tesselo-cta" data-aos="fade-right" data-aos-duration="400" data-aos-delay="100" data-aos-once="true">SATELLITE IMAGERY + AI + ENVIRONMENTAL EXPERTISE = TESSELO
+                </h2>
+              </div>
+            </div>
+            <div class="row border border-right-0 border-left-0">
+              <div class="col col-12 dark-bg first d-block d-md-none homepage-title-wrapper">
+                <img class="img-fluid homepage-title" src="{% static "assets/img/title-what_blue-mobile.svg" %}" data-aos="fade-up" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true"/>
+              </div>
+              <div class="col col-12 dark-bg first d-none d-md-block homepage-title-wrapper">
+                <img class="img-fluid homepage-title" src="{% static "assets/img/title-what_blue.svg" %}" data-aos="fade-up" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true"/>
+              </div>
+            </div>
+            <div class="row bg-change intro-copy white dark-bg">
+              <div class="col d-flex align-items-center col-12">
+                <h2 class="no-capitalize big" data-aos="fade-right" data-aos-duration="400" data-aos-delay="100" data-aos-once="true">Solutions for sustainability
+                </h2>
+              </div>
+              <div class="col d-flex align-items-center col-12">
+                <p data-aos="fade-right" data-aos-duration="400" data-aos-delay="300" data-aos-once="true">Tesselo offers near real-time, country-wide mapping solutions applicable to a broad spectrum of industries and challenges.
+                </p>
+              </div>
+            </div>
+            <div class="row services-desktop" id="services-nav">
+              <div class="col d-flex justify-content-start align-items-center col-12 h-90 border">
+                <h3 data-aos="fade-right" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true">
+                  <a href="solutions-for-sustainability#forestry" class="scroll-link no-capitalize">Forestry & Agriculture
+                  </a>
+                </h3>
+              </div>
+              <div class="col d-flex justify-content-start align-items-center col-12 h-90 border border-top-0 border-bottom-0">
+                <h3 class="service-link" data-aos="fade-right" data-aos-delay="600" data-aos-duration="0.7" data-aos-once="true">
+                  <a href="solutions-for-sustainability#infrastructure" class="scroll-link no-capitalize">Infrastructure & Cities
+                  </a>
+                </h3>
+              </div>
+              <div class="col d-flex justify-content-start align-items-center col-12 h-90 border">
+                <h3 class="service-link" data-aos="fade-right" data-aos-delay="800" data-aos-duration="0.7" data-aos-once="true">
+                  <a href="solutions-for-sustainability#insurances" class="scroll-link no-capitalize">Insurance & Certification
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="row services-mobile">
+              <div class="col col-12 services-mobile-wrapper">
+                <div class="accordion-mobile accordion-mobile-sustainability">
+                  <div class="card" id="card-forestry">
+                    <div id="collapseOneImage" class="collapse multi-collapseOne" role="tabpanel" aria-labelledby="headingOne" data-parent=".accordion-mobile-sustainability">
+                      <img class="card-img-top" src="{% static "assets/img/forestry-agriculture-home-mobile-min.jpg" %}" alt="Card image cap">
+                    </div>
+                    <div class="card-header align-items-center" id="headingOne" role="tab">
+                      <h3 data-aos="fade-in" data-aos-delay="800" data-aos-duration="0.7" data-aos-once="true">
+                        <a data-toggle="collapse" data-target=".multi-collapseOne" aria-expanded="false" aria-controls="collapseOneImage collapseOneText" href="collapseOneText">
+                          Forestry & Agriculture
+                        </a>
+                      </h3>
+                    </div>
+                    <div id="collapseOneText" class="collapse multi-collapseOne" role="tabpanel" aria-labelledby="headingOne" data-parent=".accordion-mobile-sustainability">
+                      <div class="card-body">
+                        <p class="card-text">Preserving and developing forest areas is essential to foster a sustainable future for upcoming generations.
+                        </p>
+                        <a href="solutions-for-sustainability#forestry" class="card-link">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" id="card-infrastructure">
+                    <div id="collapseTwoImage" class="collapse multi-collapseTwo" role="tabpanel" aria-labelledby="headingTwo" data-parent=".accordion-mobile-sustainability">
+                      <img class="card-img-top" src="{% static "assets/img/infrastructure-cities-home-mobile-min.jpg" %}" alt="Card image cap">
+                    </div>
+                    <div class="card-header align-items-center" id="headingTwo" role="tab">
+                      <h3 data-aos="fade-in" data-aos-delay="800" data-aos-duration="0.7" data-aos-once="true">
+                        <a data-toggle="collapse" data-target=".multi-collapseTwo" aria-expanded="false" aria-controls="collapseTwoImage collapseTwoText" href="collapseTwoText">
+                          Infrastructure & Cities
+                        </a>
+                      </h3>
+                    </div>
+                    <div id="collapseTwoText" class="collapse multi-collapseTwo" role="tabpanel" aria-labelledby="headingTwo" data-parent=".accordion-mobile-sustainability">
+                      <div class="card-body">
+                        <p class="card-text">Climate change is a rising concern, and infrastructure and urban areas are increasingly exposed to environmental hazards.
+                        </p>
+                        <a href="solutions-for-sustainability#infrastructure" class="card-link">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" id="card-insurance">
+                    <div id="collapseThreeImage" class="collapse multi-collapseThree" role="tabpanel" aria-labelledby="headingThree" data-parent=".accordion-mobile-sustainability">
+                      <img class="card-img-top" src="{% static "assets/img/insurance-certification-home-mobile-min.jpg" %}" alt="Card image cap">
+                    </div>
+                    <div class="card-header align-items-center" id="headingThree" role="tab">
+                      <h3 data-aos="fade-in" data-aos-delay="800" data-aos-duration="0.7" data-aos-once="true">
+                        <a data-toggle="collapse" data-target=".multi-collapseThree" aria-expanded="false" aria-controls="collapseThreeImage collapseThreeText" href="collapseThreeText">
+                          Insurance & Certification
+                        </a>
+                      </h3>
+                    </div>
+                    <div id="collapseThreeText" class="collapse multi-collapseThree" role="tabpanel" aria-labelledby="headingThree" data-parent=".accordion-mobile-sustainability">
+                      <div class="card-body">
+                        <p class="card-text">Tesselo’s mapping technology models environmental exposure to one or more given factors, and converts them into risk scoring.
+                        </p>
+                        <a href="solutions-for-sustainability#insurances" class="card-link">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="spatial-insights" class="service-section">
+          <div class="container-fluid">
+            <div class="row d-flex align-items-center bg-change intro-copy white dark-bg">
+              <div class="col d-flex align-items-center col-12">
+                <h2 class="no-capitalize big" data-aos="fade-right" data-aos-duration="400" data-aos-delay="100" data-aos-once="true">Spatial insights as a service
+                </h2>
+              </div>
+              <div class="col d-flex align-items-center col-12">
+                <p data-aos="fade-right" data-aos-duration="400" data-aos-delay="300" data-aos-once="true">Connect to Tesselo’s platform or API to receive useful mapping layers using near real-time data.
+                </p>
+              </div>
+            </div>
+            <div class="row services-desktop" id="services-nav">
+              <div class="col d-flex justify-content-start align-items-center col-12 h-90 border">
+                <h3 data-aos="fade-right" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true">
+                  <a href="spatial-insights-as-a-service#composite-imagery" class="scroll-link no-capitalize">Composite imagery
+                  </a>
+                </h3>
+              </div>
+              <div class="col d-flex justify-content-start align-items-center col-12 h-90 border border-top-0 border-bottom-0">
+                <h3 class="service-link" data-aos="fade-right" data-aos-delay="600" data-aos-duration="0.7" data-aos-once="true">
+                  <a href="spatial-insights-as-a-service#land-cover" class="scroll-link no-capitalize">Land Cover
+                  </a>
+                </h3>
+              </div>
+              <div class="col d-flex justify-content-start align-items-center col-12 h-90 border">
+                <h3 class="service-link" data-aos="fade-right" data-aos-delay="800" data-aos-duration="0.7" data-aos-once="true">
+                  <a href="spatial-insights-as-a-service#specialized-layers" class="scroll-link no-capitalize">Specialized layers
+                  </a>
+                </h3>
+              </div>
+            </div>
+            <div class="row services-mobile">
+              <div class="col col-12 services-mobile-wrapper">
+                <div class="accordion-mobile accordion-mobile-landscape">
+                  <div class="card" id="card-imagery">
+                    <div id="collapseFourImage" class="collapse multi-collapseFour" role="tabpanel" aria-labelledby="headingFour" data-parent=".accordion-mobile-landscape">
+                      <img class="card-img-top" src="{% static "assets/img/composite-imagery-home-mobile-min.jpg" %}" alt="Card image cap">
+                    </div>
+                    <div class="card-header align-items-center" id="headingFour" role="tab">
+                      <h3 data-aos="fade-in" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true">
+                        <a data-toggle="collapse" data-target=".multi-collapseFour" aria-expanded="false" aria-controls="collapseFourImage collapseFourText" href="collapseFourText">
+                          Composite imagery
+                        </a>
+                      </h3>
+                    </div>
+                    <div id="collapseFourText" class="collapse multi-collapseFour" role="tabpanel" aria-labelledby="headingFour" data-parent=".accordion-mobile-landscape">
+                      <div class="card-body">
+                        <p class="card-text">Tesselo generates crystal clear composite imagery with cloud free 13 bands technology.
+                        </p>
+                        <a href="spatial-insights-as-a-service#composite-imagery" class="card-link">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" id="card-land-cover">
+                    <div id="collapseFiveImage" class="collapse multi-collapseFive" role="tabpanel" aria-labelledby="headingFive" data-parent=".accordion-mobile-landscape">
+                      <img class="card-img-top" src="{% static "assets/img/land-cover-home-mobile-min.jpg" %}" alt="Card image cap">
+                    </div>
+                    <div class="card-header align-items-center" id="headingFive" role="tab">
+                      <h3 data-aos="fade-in" data-aos-delay="600" data-aos-duration="0.7" data-aos-once="true">
+                        <a data-toggle="collapse" data-target=".multi-collapseFive" aria-expanded="false" aria-controls="collapseFiveImage collapseFiveText" href="collapseFiveText">
+                          Land cover
+                        </a>
+                      </h3>
+                    </div>
+                    <div id="collapseFiveText" class="collapse multi-collapseFive" role="tabpanel" aria-labelledby="headingFive" data-parent=".accordion-mobile-landscape">
+                      <div class="card-body">
+                        <p class="card-text">Quickly run a land cover classification and measure incremental changes over a given time period. Land cover imagery can assist in detecting tree species, habitat and infrastructure in a dynamic environment.
+                        </p>
+                        <a href="spatial-insights-as-a-service#land-cover" class="card-link">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" id="card-layers">
+                    <div id="collapseSixImage" class="collapse multi-collapseSix" role="tabpanel" aria-labelledby="headingSix" data-parent=".accordion-mobile-landscape">
+                      <img class="card-img-top" src="{% static "assets/img/specialized-layers-home-mobile-min.jpg" %}" alt="Card image cap">
+                    </div>
+                    <div class="card-header align-items-center" id="headingSix" role="tab">
+                      <h3 data-aos="fade-in" data-aos-delay="800" data-aos-duration="0.7" data-aos-once="true">
+                        <a data-toggle="collapse" data-target=".multi-collapseSix" aria-expanded="false" aria-controls="collapseSixImage collapseSixText" href="collapseSixText">
+                          Specialized Layers
+                        </a>
+                      </h3>
+                    </div>
+                    <div id="collapseSixText" class="collapse multi-collapseSix" role="tabpanel" aria-labelledby="headingSix" data-parent=".accordion-mobile-landscape">
+                      <div class="card-body">
+                        <p class="card-text">Run Tesselo’s deep-learning time-aware classification models on areas of any size
+                        </p>
+                        <a href="spatial-insights-as-a-service#specialized-layers" class="card-link">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="container-fluid">
+            <div class="row about-block" style="background-image: url({% static 'assets/img/home-about-bg-min.jpg' %});background-position: center;background-size: cover;background-repeat: no-repeat;">
+              <div class="col col-12 d-none d-md-block homepage-title-wrapper">
+                <img src="{% static "assets/img/title-about.svg" %}" class="img-fluid homepage-title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true"/>
+              </div>
+              <div class="col col-12 d-block d-md-none homepage-title-wrapper">
+                <img src="{% static "assets/img/title-about-white.svg" %}" class="img-fluid homepage-title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="0.7" data-aos-once="true"/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col d-flex flex-wrap justify-content-center justify-content-md-end col-12 col-md-8 border dark-bg">
+                <div class="about-cta">
+                  <h2>Tesselo generates near real-time intelligent satellite imagery to help you understand your business’ environmental challenges.
+                  </h2>
+                  <p class="no-capitalize">We monitor incremental imagery changes over time, allowing you to identify patterns, exposure and risk factors.
+                  </p>
+                </div>
+              </div>
+              <div class="col col-md-4 hidden-sm-down dark-bg border border-left-0 grow-left-top linecontainer">
+                <svg class="svgline" style="width: 100%; height: 100%;">
+                  <line class="linha" x1="100%" y1="0" x2="0" y2="100%" style="stroke:rgb(49,39,199);stroke-width:1">
+                  </line>
+                </svg>
+              </div>
+            </div>
+            <div class="row d-flex align-items-start want-to-know-block parallax" style="background-image: url({% static 'assets/img/want-to-know-bg-min.jpg' %});background-position: center;background-size: cover;background-repeat: no-repeat;">
+              <div class="col d-flex justify-content-end align-items-start col-10 offset-1 col-sm-6 offset-sm-5 col-md-4 offset-md-4 p-0">
+                <a class="btn btn-primary btn-block border border-top-0 want-to-know-btn" href="about#what-we-are-about" role="button">Want to know more?
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="d-none d-md-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col col-12 col-md-4 h-120">
+                <div class="row d-md-flex d-xl-flex">
+                  <div class="col d-md-flex d-xl-flex align-items-md-center align-items-xl-center col-12 h-60 border">
+                    <a href="https://www.instagram.com/tesselo_ai/" target="_blank" class="footer-arrow-link">Instagram
+                    </a>
+                  </div>
+                  <div class="col d-md-flex d-xl-flex align-items-md-center align-items-xl-center col-12 h-60 border border-top-0">
+                    <a href="https://pt.linkedin.com/company/tesselo" target="_blank" class="footer-arrow-link">Linkedin
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-md-flex justify-content-md-center align-items-md-center col-12 col-md-4 grow-left-top border border-right-0 border-left-0 linecontainerfooter">
+                <svg class="svgline" style="width: 100%; height: 100%;">
+                  <line class="linha" x1="0" y1="0" x2="100%" y2="100%" style="stroke:rgb(49,39,199);stroke-width:1">
+                  </line>
+                  <!--<line class="linha" x1="100%" y1="0" x2="0" y2="100%" style="stroke:rgb(49,39,199);stroke-width:2"></line>-->
+                </svg>
+              </div>
+              <div class="col d-flex justify-content-md-center align-items-md-center col-12 col-md-4 border footer-claim-wrapper">
+                <img class="img-fluid" src="{% static "assets/img/claim.svg" %}">
+              </div>
+            </div>
+            <div class="row d-flex">
+              <div class="col d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex align-items-md-center align-items-xl-center col-12 col-md-4 h-120 contacts">
+                <p class="footer-contacts">
+                  <strong>
+                    <u>Mail Us:
+                    </u>
+                  </strong> hello@tesselo.com
+                  <br />
+                  <strong>
+                    <u>Call Us:
+                    </u>
+                  </strong> +351 215 812 855
+                  <br />
+                  <strong>
+                    <u>Meet Us:
+                    </u>
+                  </strong> Lisbon - EU
+                </p>
+              </div>
+              <div class="col d-md-flex d-xl-flex justify-content-md-center align-items-md-center justify-content-xl-center align-items-xl-center col-12 col-md-8 footer-logo">
+                <img class="img-fluid" src="{% static "assets/img/tesselo-footer-min.png" %}">
+              </div>
+            </div>
+            <div class="row h-120">
+               <div class="col col-12 col-md-4 h-120">
+                  <div class="row d-md-flex d-xl-flex">
+                     <div class="col d-md-flex d-xl-flex align-items-md-center align-items-xl-center col-12 h-60 border">
+                        <a href="terms" target="_blank" class="footer-arrow-link">Terms of Service
+                        </a>
+                     </div>
+                     <div class="col d-md-flex d-xl-flex align-items-md-center align-items-xl-center col-12 h-60 border border-top-0">
+                        <a data-toggle="collapse" href="#credits-block-desktop" role="button" aria-expanded="false" aria-controls="credits-block-desktop" class="footer-arrow-link credits-toggle">
+                        <u>Credits
+                        </u>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col col-12 col-md-4 border border-right-0 border-left-0">
+               </div>
+               <div class="col col-12 col-md-4 grow-right-top border grow-left-bottom linecontainerfooter">
+                  <svg class="svgline" style="width: 100%; height: 100%;">
+                     <line class="linha" x1="100%" y1="0" x2="0" y2="100%" style="stroke:rgb(49,39,199);stroke-width:1">
+                     </line>
+                  </svg>
+               </div>
+            </div>
+            <div class="row collapse" id="credits-block-desktop">
+              <div class="col col-12 col-md-4">
+                <div>
+                  <h5>Editorial direction
+                  </h5>
+                  <p>TESSELO
+                    <br />
+                    <a href="mailto:hello@tesselo.com" style="text-decoration:none!important;">hello@tesselo.com
+                    </a>
+                    <br /><a href="tel:+351 215 812 855" style="text-decoration:none!important;">+351 215 812 855</a>
+                    <br />Lisbon — EU
+                  </p>
+                  <p>
+                    Multispectral imagery<br>
+                    Copywriting
+                  </p>
+                  <p>© 2019
+                    <br />Space Mosaic Lda
+                    <br />All rights reserved
+                  </p>
+                </div>
+              </div>
+              <div class="col col-12 col-md-4">
+                <h5>Design &amp; Development
+                </h5>
+                <p>
+                  <strong><a href="https://addb.fr" style="text-decoration:none!important;" target="_blank">Brand strategy</a>
+                  </strong>
+                  <br /><a href="https://addb.fr" style="text-decoration:none!important;" target="_blank">ADDB</a>
+                  <br />
+                  <a href="mailto:ad@addb.fr" style="text-decoration:none!important;">ad@addb.fr
+                  </a>
+                </p>
+                <p>
+                  <strong><a href="https://fluo.pt" style="text-decoration:none!important;" target="_blank">Digital image<br />UI/UX<br />Development</a>
+                  </strong>
+                  <br /><a href="https://fluo.pt" style="text-decoration:none!important;" target="_blank">FLUO</a>
+                  <br />Bright Ideas
+                  <br /><a href="tel:+351 969 149 139" style="text-decoration:none!important;">+351 969 149 139</a>
+                  <br /><a href="mailto:ad@fluo.pt" style="text-decoration:none!important;">ad@fluo.pt</a>
+                </p>
+              </div>
+              <div class="col col-12 col-md-4 grow-right-top">
+                <p>Creative director
+                  <br /><a href="https://addb.fr" style="text-decoration:none!important;" target="_blank">Aleksander Dembinski</a>
+                </p>
+                <p>Art director
+                  <br />Nuno Patrício
+                </p>
+                <p>Developer
+                  <br />
+                  <a href="https://www.mentol.pt" style="text-decoration:none!important;" target="_blank">Hugo Rodrigues</a>
+                </p>
+                <p>Photography
+                  <br />Colorimetry
+                  <br /><a href="https://fluo.pt" style="text-decoration:none!important;" target="_blank">FLUO</a>
+                  <br />Unsplash
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <footer class="d-md-none d-sm-block">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col d-flex justify-content-md-center align-items-center col-12 col-md-6 h-120 border border-top-0 footer-claim-wrapper">
+                <img class="img-fluid" src="{% static "assets/img/claim.svg" %}">
+              </div>
+              <div class="col col-md-6 grow-left-top border border-top-0 border-left-0 linecontainer d-none d-md-block">
+                <svg class="svgline" style="width: 100%; height: 100%;">
+                  <line class="linha" x1="100%" y1="0" x2="0" y2="100%" style="stroke:rgb(49,39,199);stroke-width:1">
+                  </line>
+                </svg>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12 col-md-8 footer-logo">
+                <img class="img-fluid" src="{% static "assets/img/tesselo-footer-min.png" %}">
+              </div>
+              <div class="col d-flex align-items-center col-12 h-120 contacts border border-bottom-0">
+                <p class="footer-contacts">
+                  <strong>
+                    <u>Mail Us:
+                    </u>
+                  </strong> hello@tesselo.com
+                  <br />
+                  <strong>
+                    <u>Call Us:
+                    </u>
+                  </strong> +351 215 812 855
+                  <br />
+                  <strong>
+                    <u>Meet Us:
+                    </u>
+                  </strong> Lisbon - EU
+                </p>
+              </div>
+              <div class="col d-xl-flex align-items-xl-center col-12 contacts">
+                <div class="row d-sm-flex">
+                  <div class="col d-flex align-items-center col-12 h-60 border">
+                    <a href="https://www.instagram.com/tesselo_ai/" target="_blank" class="footer-arrow-link">Instagram
+                    </a>
+                  </div>
+                  <div class="col d-flex align-items-center col-12 h-60 border border-top-0 border-bottom-0">
+                    <a href="https://pt.linkedin.com/company/tesselo" target="_blank" class="footer-arrow-link">LinkedIn
+                    </a>
+                  </div>
+                  <div class="col d-flex align-items-center col-12 h-60 border border-bottom-0">
+                    <a href="terms" target="_blank" class="footer-arrow-link">Terms of Service
+                    </a>
+                  </div>
+                  <div class="col d-flex align-items-center col-12 h-60 border">
+                    <a data-toggle="collapse" href="#credits-block-mobile" role="button" aria-expanded="false" aria-controls="credits-block-mobile" class="footer-arrow-link credits-toggle">
+                      <u>Credits
+                      </u>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row collapse" id="credits-block-mobile">
+              <div class="col col-md-6">
+                <div>
+                  <h5>Editorial direction
+                  </h5>
+                  <p>TESSELO
+                    <br />
+                    <a href="mailto:hello@tesselo.com" style="text-decoration:none!important;">hello@tesselo.com
+                    </a>
+                    <br /><a href="tel:+351 215 812 855" style="text-decoration:none!important;">+351 215 812 855</a>
+                    <br />Lisbon — EU
+                  </p>
+                  <p>
+                    Multispectral imagery
+                    <br />Copywriting
+                  </p>
+                  <p>© 2019
+                    <br />Space Mosaic Lda
+                    <br />All rights reserved
+                  </p>
+                </div>
+              </div>
+              <div class="col col-md-6">
+                <h5>Design &amp; Development
+                </h5>
+                <p>
+                  <strong><a href="https://addb.fr" style="text-decoration:none!important;" target="_blank">Brand strategy</a>
+                  </strong>
+                  <br /><a href="https://addb.fr" style="text-decoration:none!important;" target="_blank">ADDB</a>
+                  <br />
+                  <a href="mailto:ad@addb.fr" style="text-decoration:none!important;">ad@addb.fr</a>
+                </p>
+                <p>
+                  <strong><a href="https://fluo.pt" style="text-decoration:none!important;" target="_blank">Digital image</a>
+                  </strong>
+                  <br /><a href="https://fluo.pt" style="text-decoration:none!important;" target="_blank">FLUO</a>
+                  <br />Bright Ideas
+                  <br /><a href="tel:+351 969 149 139" style="text-decoration:none!important;">+351 969 149 139</a>
+                  <br />
+                  <a href="mailto:ad@fluo.pt" style="text-decoration:none!important;">ad@fluo.pt
+                  </a>
+                </p>
+                <p>Creative Director
+                  <br /><a href="https://addb.fr" style="text-decoration:none!important;" target="_blank">Aleksander Dembinski</a>
+                </p>
+                <p>Art Director
+                  <br />Nuno Patrício
+                </p>
+                <p>Developer
+                  <br />
+                  <a href="https://www.mentol.pt" style="text-decoration:none!important;" target="_blank">Hugo Rodrigues</a>
+                </p>
+                <p>Photography
+                  <br />Colorimetry
+                  <br /><a href="https://fluo.pt" style="text-decoration:none!important;" target="_blank">FLUO</a>
+                  <br />Unsplash
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="{% static "assets/js/jquery.min.js" %}">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js">
+    </script>
+    <script src="{% static "assets/bootstrap/js/bootstrap.min.js" %}">
+    </script>
+    <script src="{% static "assets/js/bs-animation.js" %}">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js">
+    </script>
+    <script type="text/javascript" src="{% static "assets/js/tesselo.js" %}?v15">
+    </script>
+    <script src="{% static "assets/js/scroll-images.js" %}">
+    </script>
+    <script src="{% static "assets/js/homepage-animation.js" %}">
+    </script>
+  </body>
+</html>
