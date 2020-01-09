@@ -1,23 +1,23 @@
-<!DOCTYPE html>{% load static %}
+<!DOCTYPE html>
 <html>
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
       <title>Tesselo
       </title>
-      <link rel="apple-touch-icon" sizes="180x180" href={% static "apple-touch-icon.png" %}>
-      <link rel="icon" type="image/png" sizes="32x32" href={% static "favicon-32x32.png" %}>
-      <link rel="icon" type="image/png" sizes="16x16" href={% static "favicon-16x16.png" %}>
-      <link rel="manifest" href={% static "site.webmanifest" %}>
-      <link rel="mask-icon" href={% static "safari-pinned-tab.svg" %} color="#231f20">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="manifest" href="site.webmanifest">
+      <link rel="mask-icon" href="safari-pinned-tab.svg" color="#231f20">
       <meta name="msapplication-TileColor" content="#ffffff">
       <meta name="theme-color" content="#ffffff">
-      <link rel="stylesheet" href="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
+      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,500">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-      <link rel="stylesheet" href="{% static "assets/css/styles.css" %}">
-      <link rel="stylesheet" href="{% static "assets/css/custom.css" %}">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/css/custom.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css">
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
@@ -42,10 +42,8 @@
            }
          })});
       </script>
-      {% if request.get_host == "tesselo.com" %}
-        <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101157326);</script>
-        <script async src="//static.getclicky.com/js"></script>
-      {% endif %}
+      <script>if(location.host == 'tesselo.com'){var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101157326);}</script>
+      <script async src="https://static.getclicky.com/js"></script>
    </head>
    <body id="about-page" class="pre-animation">
       <div class="animsition">
@@ -146,7 +144,7 @@
                   <div class="menunav">
                      <div class="logodiv">
                         <a class="navbar-brand" href="/">
-                        <img src="{% static "assets/img/nav-logo.svg" %}" width="30" height="30" alt="">
+                        <img src="assets/img/nav-logo.svg" width="30" height="30" alt="">
                         </a>
                      </div>
                      <div class="navbar-links-wrapper d-flex align-items-end justify-content-end">
@@ -166,7 +164,7 @@
                         </ul>
                      </div>
                      <div class="iconmenu">
-                        <img src="{% static "assets/img/nav-plus.svg" %}" />
+                        <img src="assets/img/nav-plus.svg" />
                      </div>
                   </div>
                </div>
@@ -265,7 +263,7 @@
                            </svg>
                         </div>
                         <div class="col d-flex justify-content-md-center align-items-md-center col-12 col-md-4 border footer-claim-wrapper">
-                           <img class="img-fluid" src="{% static "assets/img/claim.svg" %}">
+                           <img class="img-fluid" src="assets/img/claim.svg">
                         </div>
                      </div>
                      <div class="row d-flex">
@@ -288,7 +286,7 @@
                            </p>
                         </div>
                         <div class="col d-md-flex d-xl-flex justify-content-md-center align-items-md-center justify-content-xl-center align-items-xl-center col-12 col-md-8 footer-logo">
-                           <img class="img-fluid" src="{% static "assets/img/tesselo-footer-min.png" %}">
+                           <img class="img-fluid" src="assets/img/tesselo-footer-min.png">
                         </div>
                      </div>
                      <div class="row h-120">
@@ -381,7 +379,7 @@
                        <div class="container-fluid">
                          <div class="row">
                            <div class="col d-flex justify-content-md-center align-items-center col-12 col-md-6 h-120 border border-top-0 footer-claim-wrapper">
-                             <img class="img-fluid" src="{% static "assets/img/claim.svg" %}">
+                             <img class="img-fluid" src="assets/img/claim.svg">
                            </div>
                            <div class="col col-md-6 grow-left-top border border-top-0 border-left-0 linecontainer d-none d-md-block">
                              <svg class="svgline" style="width: 100%; height: 100%;">
@@ -392,7 +390,7 @@
                          </div>
                          <div class="row">
                            <div class="col col-12 col-md-8 footer-logo">
-                             <img class="img-fluid" src="{% static "assets/img/tesselo-footer-min.png" %}">
+                             <img class="img-fluid" src="assets/img/tesselo-footer-min.png">
                            </div>
                            <div class="col d-flex align-items-center col-12 h-120 contacts border border-bottom-0">
                              <p class="footer-contacts">
@@ -500,12 +498,12 @@
             </main>
          </div>
       </div>
-      <script src="{% static "assets/js/jquery.min.js" %}"></script>
+      <script src="assets/js/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-      <script src="{% static "assets/bootstrap/js/bootstrap.min.js" %}"></script>
-      <script src="{% static "assets/js/bs-animation.js" %}"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/js/bs-animation.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-      <script src="{% static "assets/js/tesselo.js" %}"></script>
+      <script src="assets/js/tesselo.js"></script>
    </body>
 </html>
