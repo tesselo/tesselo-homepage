@@ -8,6 +8,7 @@ Deploy with the following command.
 bucket=dev.tesselo.com
 aws s3 sync --exclude *.html --acl public-read src/ s3://$bucket
 aws s3 cp --content-type 'text/html' --acl public-read src/index.html s3://$bucket/index.html
+aws s3 cp --content-type 'text/html' --acl public-read src/error.html s3://$bucket/error.html
 aws s3 cp --content-type 'text/html' --acl public-read src/about.html s3://$bucket/about
 aws s3 cp --content-type 'text/html' --acl public-read src/terms.html s3://$bucket/terms
 aws s3 cp --content-type 'text/html' --acl public-read src/solutions-for-sustainability.html s3://$bucket/solutions-for-sustainability
