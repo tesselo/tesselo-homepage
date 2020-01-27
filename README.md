@@ -5,7 +5,9 @@ Deploy with the following command.
 ----------------------------------
 
 ```sh
-bucket=dev.tesselo.com
+#bucket=dev.tesselo.com
+#bucket=staging.tesselo.com
+bucket=tesselo.com
 aws s3 sync --exclude *.html --acl public-read src/ s3://$bucket
 aws s3 cp --content-type 'text/html' --acl public-read src/index.html s3://$bucket/index.html
 aws s3 cp --content-type 'text/html' --acl public-read src/error.html s3://$bucket/error.html

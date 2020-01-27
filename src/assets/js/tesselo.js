@@ -164,7 +164,7 @@ $('.linhac').each(function () {
 	// Team //
 
 	function team1() {
-		$("#team-headshots").css('background-image','url(' + STATIC_URL + 'assets/img/team-remi-min.jpg)');
+		$("#team-headshots").css('background-image','url(assets/img/team-remi-min.jpg)');
 		//$("coraltera").attr('style', 'color: #3127C7 !important');
 		//$("#remi a").attr('style', 'color: #3127C7 !important');
 		$(".coraltera1").addClass("blue");
@@ -175,7 +175,7 @@ $('.linhac').each(function () {
 	}
 
 	function team2() {
-		$("#team-headshots").css('background-image','url(' + STATIC_URL + 'assets/img/team-daniel-min.jpg)');
+		$("#team-headshots").css('background-image','url(assets/img/team-daniel-min.jpg)');
 		$(".coraltera2").addClass("blue");
 		$(".coraltera1").removeClass("blue");
 		$(".coraltera3").removeClass("blue");
@@ -183,7 +183,7 @@ $('.linhac').each(function () {
 	}
 
 	function team3() {
-		$("#team-headshots").css('background-image','url(' + STATIC_URL + 'assets/img/team-michael-min.jpg)');
+		$("#team-headshots").css('background-image','url(assets/img/team-michael-min.jpg)');
 		$(".coraltera3").addClass("blue");
 		$(".coraltera1").removeClass("blue");
 		$(".coraltera2").removeClass("blue");
@@ -191,7 +191,7 @@ $('.linhac').each(function () {
 	}
 
 	function team4() {
-		$("#team-headshots").css('background-image','url(' + STATIC_URL + 'assets/img/team-marine-min.jpg)');
+		$("#team-headshots").css('background-image','url(assets/img/team-marine-min.jpg)');
 		$(".coraltera4").addClass("blue");
 		$(".coraltera1").removeClass("blue");
 		$(".coraltera2").removeClass("blue");
